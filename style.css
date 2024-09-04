@@ -10,8 +10,23 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #fd6b51;
+     background-color:gradient();
+    color:rgba(212,173,229,0.781);
+    background: linear-gradient(120deg, #f19c9c, #e8c3a8, #fff8c9, #dbf3c3, #a0d8f0, #cba1e8);
     padding: 0 10px;
+    animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 15s ease infinite;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .container {
