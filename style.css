@@ -10,41 +10,45 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-     background-color:gradient();
-    color:rgba(212,173,229,0.781);
-    background: linear-gradient(120deg, #f19c9c, #e8c3a8, #fff8c9, #dbf3c3, #a0d8f0, #cba1e8);
+    background-color: gradient();
+    color: rgba(255, 255, 255, 0.781);
+    background: linear-gradient(120deg, #ebaeae, #b4937c, #fff8c9, #71f1b8, #a0d8f0, #cba1e8);
     padding: 0 10px;
+    background-size: 300% 300%;
     animation: gradientAnimation 10s ease infinite;
-    animation: gradientAnimation 15s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
 }
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
 
 .container {
-    background: #000;
+    background: #757474;
     /* width: 780px; */
     border-radius: 17px;
     padding: 55px 60px;
 }
 
 .container header {
-    color: #9c9c9c;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 h2 {
-    color: #9c9c9c;
+    color: #ffffff;
     font-size: 27px;
     font-style: italic;
 
@@ -62,7 +66,7 @@ header .column span {
 }
 
 .volume-slider input {
-    accent-color: #fd6b51;
+    accent-color: #000000;
     outline: none;
     cursor: pointer;
 }
@@ -93,7 +97,7 @@ header .column span {
 
 .keys-checkbox input:checked::before {
     left: 35px;
-    background: #fd6b51;
+    background: #050505;
 
 }
 
@@ -103,7 +107,7 @@ header .column span {
 }
 
 .piano-keys .key {
-    color: #a2a2a2;
+    color: #ffffff;
     list-style: none;
     text-transform: uppercase;
     user-select: none;
